@@ -52,6 +52,8 @@ SpringMVC是一种基于Java,实现了Web MVC设计模式，请求驱动类型�
 
 ![](https://i.imgur.com/DT9IY0g.png)   
 
+![](https://upload-images.jianshu.io/upload_images/7896890-65ef874ad7da59a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)   
+
 **具体流程：**   
 1. 首先用户发送请求------>DispatcherServlet，前段控制器收到请求后自己不进行处理，而是委托给其他的解析器进行处理，作为统一访问点，进行全局的流程控制。   
 2. DispatcherServlet------>HandlerMapping，处理器映射器将会把请求映射为HandlerExecutionChain对象(包含一个Handler处理器对象、多个HandlerInterceptor拦截器)对象。
